@@ -41,15 +41,19 @@
 </header>
 <!-- fin header-->
   <main>
-    <section class="container bg-warning">
-      <div class="row">
-        <h2></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perspiciatis et eligendi eum laboriosam delectus corrupti consequatur aliquid velit cumque.</p>
-      </div>
-    </section>
+    <form class="container bg-black m-auto d-flex flex-column">
+
+      <label for="nombre" class="text-white text-center my-3">Nombre:</label>
+      <input class="form-control w-25 m-auto" id="nombre" type="text" name="nombre"/>
+        <label for="apellido" class="text-white text-center my-3">Apellido:</label>
+        <input class="form-control w-25 m-auto" id="apellido" type="text" name="apellido"/>
+          <label for="comentario" class="text-white text-center my-3">Servicio:</label>
+          <textarea for="comentario" class="form-control w-25 m-auto mb-4" placeholder="comente aquí"></textarea>
+            <button type="submit" class="w-15 mb-5 m-auto">Enviar</button>
+    </form>
   </main>
   <footer>
-    <div class="card w-100 bg-secondary">
+    <div class="card w-100 bg-secondary p-4" id="footer">
         <div class="card-body text-center">
           <h5 class="card-title fs-4">sominsonsimon@gmail.com</h5>
             <div class="redes fs-4 m-auto">
