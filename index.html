@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <title>SSominson</title>
 </head>
@@ -19,20 +20,20 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item mx-5">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
                   </li>
                   <li class="nav-item mx-5">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link text-white" href="./pages/acercade.html">Acerca de</a>
                   </li>
                   <li class="nav-item mx-5">
-                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                    <a class="nav-link text-white" href="./pages/servicios.html">Servicios</a>
                   </li> 
                   <li class="nav-item mx-5">
-                    <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+                    <a class="nav-link text-white" href="./pages/proyectos.html">Proyectos</a>
                   </li>
-                  <li class="nav-item mx-5">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  <li class="nav-item mx-4">
+                    <a class="nav-link text-white" href="./pages/contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -42,28 +43,29 @@
     <!-- fin header-->
     <!-- comienzo main-->
     <main>
-        <section class="container bg-black">
+        <section class="container bg-black mb-0">
             <div class="row">
-                <p class="text-white fs-2 text-center">bienvenidos</p>
-                <h1 class="text-success fs-2 text-center">Simón Sominson</h1>
-                <p class="text-white fs-3 text-center">Web Dev.</p>
-                <p class="text-success fs-4 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius delectus placeat facilis tempora rerum aliquid voluptas fugiat nemo vitae, aliquam nihil odio consequatur ducimus, sequi cupiditate odit. Amet fugiat assumenda praesentium earum. Exercitationem quis aut accusantium quo impedit quibusdam amet.</p>
-                <img src="./img/3monis.jpg" class="mb-5" alt="3monis">
+                <h1 class="text-warning text-decoration-underline text-uppercase mb-3 fs-1 text-center">bienvenidos</h1>
+                <h2 class="text-white fs-2 text-center">Simón Sominson</h2>
+                <p class="text-warning fs-2 text-center text-decoration-underline text-uppercase">Web Dev.</p>
+                <p class="text-white fs-4 text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius delectus placeat facilis tempora rerum aliquid voluptas fugiat nemo vitae, aliquam nihil odio consequatur ducimus, sequi cupiditate odit. Amet fugiat assumenda praesentium earum. Exercitationem quis aut accusantium quo impedit quibusdam amet.</p>
+                <img src="./img/3monis.jpg" class="mb-5">
             </div>
-            <div class="bottons">
-                <div class="bottons text-center mb-2 p-5"><button type="button" class="btn btn-success">Mas info</button></div>
+            <div class="bottons" data-aos="flip-left" data-aos-duration="1000">
+                <div class="bottons text-center mb-2 p-5"><button type="button" class="btn btn-success text-uppercase"><a href="./pages/proyectos.html" class="text-decoration-none text-white">proyectos</a></button></div>
 
             </div>
     </section>
     </main>
     <footer>
-      <div class="card w-100 bg-secondary">
+      <div class="card w-100 bg-secondary" id="footer">
           <div class="card-body text-center">
             <h5 class="card-title fs-4">sominsonsimon@gmail.com</h5>
               <div class="redes fs-4 m-auto">
-                  <i class="fa-brands fa-linkedin"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                  <i class="fa-brands fa-twitter"></i>
+                  <a href="https://ar.linkedin.com" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://instagram.com" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://twitter.com" class="text-white"><i class="fa-brands fa-twitter"></i></a>
               </div>
             <p class="card-title fs-4">copyright</p>
           </div>
@@ -71,5 +73,9 @@
   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

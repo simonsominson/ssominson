@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import 'animate.css';
+
+body {
+    font-family: 'Lato', sans-serif;
+}
 .navbar-brand{
     font-size: 25px;
     font-weight: 800;
@@ -15,3 +21,7 @@ main {
     background-size: cover;
     background-position: center;
 }
+#footer{
+    border-radius: 0;
+}
+
